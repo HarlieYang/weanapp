@@ -1,0 +1,16 @@
+<view>
+    <view class="con">
+        <swiper current="{{current}}" bindchange="onChange">
+            <swiper-item wx:for="{{data}}" >
+            {{item.slot}}
+                <view class="swiper-item" slot="{{item.slot}}">
+                </view>
+            </swiper-item>
+        </swiper>
+    </view>
+    <view class="tabbar">
+        <view wx:for="{{data}}" bindtap="jumpTo" class="tab" bindtab="onSwiper" data-index="{{index}}">
+            {{item.name}}
+        </view>
+    </view>
+</view>

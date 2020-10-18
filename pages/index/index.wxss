@@ -1,0 +1,26 @@
+/**index.wxss**/
+.main-text{
+  width: 100%;
+  color: #313234;
+  font-size: 24px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  font-weight: 500;
+  float: left;
+}
+.title{
+  font-size: 12px;
+  color: #929395;
+  font-weight: 400;
+}
+.ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.li{
+  width: 100%;
+  margin-top: 20px;
+  color: #3a3a3a;
+}
