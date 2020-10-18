@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="main-text">
+    <view class="text">Wean</view>
+    <text class="title">微信小程序组件库,让开发变的更简单</text>
+  </view>
+  <view class="ul">
+    <view wx:for="{{weanText}}" class="li">
+      <view>{{item.name}}</view>
+      <view wx:for="{{item.textData}}" wx:for-item="text" class="btn" 
+      bindtap="toUrl" data-item="{{text}}">{{text.name}}</view>
+    </view>
+  </view>
+  
+</view>
