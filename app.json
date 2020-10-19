@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/tabbar/index"
+    "pages/tabbar/index",
+    "pages/nav/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,7 +1,7 @@
 <!--pages/tabbar/index.wxml-->
 <view class="container">
-    <tabbar>
-        <view name="index">首页</view>
-        <view name="mine">我的</view>
+    <tabbar data="{{data}}">
+        <view slot="index">首页</view>
+        <view slot="order">我的</view>
     </tabbar>
 </view>

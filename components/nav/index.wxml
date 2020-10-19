@@ -1,0 +1,19 @@
+<view>
+    <ul class="nav-list">
+        <scroll-view class="scroll-view-H" scroll-x="true">
+            <li wx:for="{{data}}" wx:key="index" class="{{index == current ? 'li active':'li'}}" bindtap="onSwiper" data-index="{{index}}" >
+                <span>{{item.text}}</span>
+                <span class="line"></span>
+            </li>
+        </scroll-view>
+    </ul>
+    <view class="con">
+        <swiper current="{{current}}" bindchange="onChange" class="swiper">
+            <swiper-item wx:for="{{data}}" wx:key="index">
+                <view class="swiper-item">
+                    <slot name="{{item.slot}}"></slot>
+                </view>
+            </swiper-item>
+        </swiper>
+    </view>
+</view>

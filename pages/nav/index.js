@@ -1,12 +1,5 @@
-/*
- * @Author: your name
- * @Date: 2020-10-19 00:30:14
- * @LastEditTime: 2020-10-19 21:28:29
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /wean/pages/tabbar/index.js
- */
-// pages/tabbar/index.js
+
+// pages/nav/index.js
 Page({
 
   /**
@@ -15,14 +8,34 @@ Page({
   data: {
     data: [
       {
-          name: '首页',
-          path: '/pages/index/index',
-          slot: "index"
+          text: '全部',
+          index: 0,
+          slot: 'onw'
       },
       {
-          name: '订单',
-          path: '/pages/mine/index',
-          slot: "order"
+          text: '服饰',
+          index: 1,
+          slot: 'two'
+      },
+      {
+          text: '护肤',
+          index: 2,
+          slot: 'three'
+      },
+      {
+          text: '运动',
+          index: 3,
+          slot: 'four'
+      },
+      {
+          text: '家电',
+          index: 4,
+          slot: 'five'
+      },
+      {
+          text: '化妆品',
+          index: 5,
+          slot: 'six'
       }
   ]
   },

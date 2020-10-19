@@ -15,7 +15,7 @@ Page({
           },
           {
             name: '滚动导航条',
-            url: '/pages/tabbar/index'
+            url: '/pages/nav/index'
           },
           {
             name: '抽屉',
