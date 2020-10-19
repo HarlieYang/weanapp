@@ -10,7 +10,7 @@ Page({
       {
           text: '全部',
           index: 0,
-          slot: 'onw'
+          slot: 'one'
       },
       {
           text: '服饰',
