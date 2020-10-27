@@ -1,66 +1,39 @@
-// pages/index/index.js
+//index.js
+//获取应用实例
+import {jumpTo} from '../../utils/util'
+const app = getApp()
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    weanText: [
+      {
+        name: '业务组件',
+        textData:[
+          {
+            name: '底部导航栏',
+            url: '/pages/tabbar/index'
+          },
+          {
+            name: '滚动导航条',
+            url: '/pages/nav/index'
+          },
+          {
+            name: '抽屉',
+            url: '/pages/tabbar/index'
+          },
+        ]
+      },
+      {
+        name: '营销组件',
+        textData:[]
+      }
+    ]
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onLoad: function () {
+    
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  toUrl(e){
+    let {url} = e.target.dataset.item
+    jumpTo(url)
   }
 })

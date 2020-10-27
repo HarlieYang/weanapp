@@ -1,0 +1,28 @@
+.tabbar{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+    background: #ffffff;
+}
+.tab{
+    flex: 1;
+    text-align: center;
+}
+.tab.active{
+    color: #1989fa;
+}
+.con{
+    height: calc(100vh - 50px);
+}
+.swiper,.swiper-item{
+    height: 100%;
+}
+.swiper-item{
+    padding: 20px 0;
+}

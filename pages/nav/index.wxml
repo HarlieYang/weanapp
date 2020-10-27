@@ -1,0 +1,11 @@
+<!--pages/nav/index.wxml-->
+<view class="nav">
+    <nav data="{{data}}">
+        <view slot="one">one</view>
+        <view slot="two">two</view>
+        <view slot="three">three</view>
+        <view slot="four">four</view>
+        <view slot="five">five</view>
+        <view slot="six">six</view>
+    </nav>
+</view>

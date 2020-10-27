@@ -1,0 +1,22 @@
+/**app.wxss**/
+.container{
+  background: #f2f3f5;
+  width: 100%;
+  height: 100vh;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.btn{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #3a3a3a;
+  font-size: 15px;
+}

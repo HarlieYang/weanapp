@@ -1,0 +1,35 @@
+.nav-list{
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.scroll-view-H{
+    width: 100%;
+    white-space: nowrap;
+}
+.li{
+    width: 80px;
+    display: inline-block;
+    text-align: center;
+    background: #ffffff;
+    color: #000000;
+}
+.li.active{
+    color: #1989fa;
+}
+.con{
+    height: calc(100vh - 44px);
+    margin-top: 44px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+.swiper,.swiper-item{
+    height: 100%;
+}
+.swiper-item{
+    padding: 20px 0;
+}

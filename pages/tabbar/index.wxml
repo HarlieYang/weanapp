@@ -1,0 +1,7 @@
+<!--pages/tabbar/index.wxml-->
+<view class="container">
+    <tabbar data="{{data}}">
+        <view slot="index">首页</view>
+        <view slot="order">我的</view>
+    </tabbar>
+</view>

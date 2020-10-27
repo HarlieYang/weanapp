@@ -1,2 +1,20 @@
-<!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<!--index.wxml-->
+<view class="container">
+  <view class="main-text">
+    <view class="img">
+      <image src="../../assets/images/logo.png"></image>
+    </view>
+    <view>
+      <view class="text">Wean</view>
+    </view>
+  </view>
+  <text class="title">微信小程序组件库,让开发变的更简单</text>
+  <view class="ul">
+    <view wx:for="{{weanText}}" wx:key="index" class="li">
+      <view class="wean-text">{{item.name}}</view>
+      <view wx:for="{{item.textData}}" wx:for-item="text" class="btn" wx:key="text"
+      bindtap="toUrl" data-item="{{text}}">{{text.name}}</view>
+    </view>
+  </view>
+  
+</view>
