@@ -1,0 +1,28 @@
+<!--pages/drawer/index.wxml-->
+<view class="drawer">
+    <view bindtap="handleClick" class="button"  data-type="left">
+        左侧打开抽屉
+    </view>
+
+    <view bindtap="handleClick" class="button" data-type="right">
+        右侧打开抽屉
+    </view>
+
+    <view bindtap="handleClick" class="button"  data-type="bottom">
+        底部打开抽屉
+    </view>
+
+    <view class="con">
+        <drawer id="leftdrawer" mode="left">
+            <view class="text">left drawer</view>
+        </drawer>
+        <drawer id="rightdrawer" mode="right">
+            <view class="text">right drawer</view>
+        </drawer>
+        <drawer id="bottomdrawer" mode="bottom" height="{{200}}">
+            <view class="text">bottom drawer</view>
+        </drawer>
+    </view>
+</view>
+
+  

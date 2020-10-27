@@ -19,7 +19,7 @@ Page({
           },
           {
             name: '抽屉',
-            url: '/pages/tabbar/index'
+            url: '/pages/drawer/index'
           },
         ]
       },

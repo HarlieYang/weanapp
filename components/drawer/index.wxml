@@ -1,0 +1,12 @@
+<view wx-if="{{visibleSync}}" 
+class="{{ showDrawer?'uni-drawer': 'uni-drawer uni-drawer--visible' }}">
+    <view 
+    class="{{ showDrawer && mask ? 'uni-drawer__mask--visible uni-drawer__mask': 'uni-drawer__mask' }}"
+    data-type='mask'
+    bindtap="close"/>
+    <view 
+    class="uni-drawer__content {{ showDrawer ? 'uni-drawer__content--visible' : ''}} {{ rightMode ? 'uni-drawer--right' : '' }} {{ bottomMode ? 'uni-drawer--bottom' : ''}} {{ leftMode ? 'uni-drawer--left' : ''}}"
+    style="width: {{ bottomMode ? '100%': drawerWidth + 'px'}}; height: {{ !bottomMode ? '100%' : draweHeight + 'px'}}">
+        <slot />
+    </view>
+</view>

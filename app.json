@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/tabbar/index",
-    "pages/nav/index"
+    "pages/nav/index",
+    "pages/drawer/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

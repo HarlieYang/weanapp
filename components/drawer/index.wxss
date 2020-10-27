@@ -1,0 +1,77 @@
+/* 背景颜色 */
+.uni-drawer {
+    /* #ifndef APP-NVUE */
+    display: block;
+    /* #endif */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.uni-drawer__content {
+    /* #ifndef APP-NVUE */
+    display: block;
+    /* #endif */
+    position: absolute;
+    width: 220px;
+    bottom: 0;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.uni-drawer--left {
+    top: 0;
+    left: 0;
+    /* #ifdef APP-NVUE */
+    transform: translateX(-220px);
+    /* #endif */
+    /* #ifndef APP-NVUE */
+    transform: translateX(-100%);
+    /* #endif */
+}
+
+.uni-drawer--right {
+    top: 0;
+    right: 0;
+    /* #ifdef APP-NVUE */
+    transform: translateX(220px);
+    /* #endif */
+    /* #ifndef APP-NVUE */
+    transform: translateX(100%);
+    /* #endif */
+}
+
+.uni-drawer--bottom{
+    bottom: 0;
+    transform: translateY(300px);
+}
+
+.uni-drawer__content--visible {
+    transform: translateX(0px);
+}
+
+
+.uni-drawer__mask {
+    /* #ifndef APP-NVUE */
+    display: block;
+    /* #endif */
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.3s;
+}
+
+.uni-drawer__mask--visible {
+    /* #ifndef APP-NVUE */
+    display: block;
+    /* #endif */
+    opacity: 1;
+}
