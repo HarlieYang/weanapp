@@ -25,7 +25,16 @@ Page({
       },
       {
         name: '营销组件',
-        textData:[]
+        textData:[
+          {
+            name: '时间日期选择器',
+            url: '/pages/date/index'
+          },
+          {
+            name: '图片裁剪',
+            url: '/pages/imgcove/index'
+          }
+        ]
       }
     ]
   },

@@ -20,3 +20,17 @@
   color: #3a3a3a;
   font-size: 15px;
 }
+.button{
+  width: 100%;
+  height: 44px;
+  background: #1989fa;
+  border-radius: 2px;
+  border: 1px solid #1989fa;
+  font-size: 16px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 44px;
+  margin-top: 20px;
+}

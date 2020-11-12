@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/tabbar/index",
     "pages/nav/index",
-    "pages/drawer/index"
+    "pages/drawer/index",
+    "pages/date/index",
+    "pages/imgcove/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

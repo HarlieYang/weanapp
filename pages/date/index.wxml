@@ -1,0 +1,26 @@
+<!--pages/date/index.wxml-->
+<view class="section">
+    <view class="section__title">日期选择器</view>
+    <view class="con">
+        <picker mode="multiSelector" 
+            value="{{startTime.dateTime}}" 
+            bindchange="changeDateTime" 
+            bindcolumnchange="changeDateTimeColumn" 
+            range="{{startTime.dateTimeArray}}" data-time="startTime">
+            <view class="tui-picker-detail">
+            {{startTime.value}}
+            </view>
+        </picker>
+        <span>至</span>
+        <picker mode="multiSelector" 
+            value="{{endTime.dateTime}}" 
+            bindchange="changeDateTime" 
+            bindcolumnchange="changeDateTimeColumn" 
+            range="{{endTime.dateTimeArray}}" data-time="endTime">
+            <view class="tui-picker-detail">
+            {{endTime.value}}
+            </view>
+        </picker> 
+    </view>
+      
+</view>

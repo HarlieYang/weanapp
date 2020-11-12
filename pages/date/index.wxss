@@ -1,0 +1,14 @@
+/* pages/date/index.wxss */
+.section{
+    padding: 20rpx;
+    box-sizing: border-box;
+}
+.section__title{
+    text-align: left;
+    line-height: 40px;
+}
+.con{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
