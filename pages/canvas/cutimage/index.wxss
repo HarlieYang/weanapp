@@ -1,0 +1,102 @@
+/* pages/date/index.wxss */
+.section-main{
+    width: 100%;
+    height: 100vh;
+    padding: 300rpx 0;
+    box-sizing: border-box;
+}
+.canvas{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.new-canvas{
+    width: 600rpx;
+    height: 400rpx;
+    background: #cccccc;
+    margin: 0 auto;
+    margin-top: 20rpx;
+}
+.select-image{
+    width: 600rpx;
+    margin: 0 auto;
+}
+.cut-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0,0.7);
+}
+.cut-container .line{
+    width: 600rpx;
+    height: 400rpx;
+    border: 1px solid #ffffff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-sizing: border-box;
+    z-index: 999;
+}
+.cut-container .line .tl{
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+}
+.cut-container .line .tr{
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+}
+.cut-container .line .bl{
+    position: absolute;
+    left: -1px;
+    bottom: -1px;
+    width: 15px;
+    height: 15px;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+}
+.cut-container .line .br{
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    width: 15px;
+    height: 15px;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+}
+.set{
+    width: 600rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 60rpx;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+}
+.set-item{
+    color:#ffffff;
+}
+.set-item>image{
+    width: 30px;
+    height: 30px;
+}

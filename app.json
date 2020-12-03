@@ -5,7 +5,8 @@
     "pages/nav/index",
     "pages/drawer/index",
     "pages/date/index",
-    "pages/imgcove/index"
+    "pages/imgcove/index",
+    "pages/canvas/cutimage/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -13,6 +14,5 @@
     "navigationBarTitleText": "Weanapp",
     "navigationBarTextStyle":"black"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

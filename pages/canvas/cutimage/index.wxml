@@ -1,0 +1,26 @@
+<!--pages/date/index.wxml-->
+<view class="section">
+    <view wx:if="{{!cutView}}" class="section-main">
+         <button size="default" type="default" class="select-image"  bindtap="getImage">选择图片</button>
+         <canvas canvas-id="new-canvas"  class="new-canvas"></canvas>
+    </view>
+    <view class="cut-container" wx:else >
+        <canvas
+            canvas-id="canvas"
+            class="canvas"
+            style="width:{{canvasWidth}}px;height:{{canvasHeight}}px"
+        ></canvas>
+        <cover-view  class="line">
+        </cover-view>
+        <cover-view class="set">
+            <cover-view class="set-item" bindtap="cancle">
+                <!-- <image src="../../../assets/images/cancle.png" mode="widthFix"/> -->
+                取消
+            </cover-view>
+            <cover-view class="set-item"  mut-bind:tap="cutresult">
+                确定
+                <!-- <image src="../../../assets/images/sure.png" mode="widthFix"/> -->
+            </cover-view>
+        </cover-view>
+    </view>
+</view>

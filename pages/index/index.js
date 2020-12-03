@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-10-16 17:07:42
+ * @LastEditTime: 2020-12-03 09:40:56
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \weanapp\pages\index\index.js
+ */
 //index.js
 //获取应用实例
 import {jumpTo} from '../../utils/util'
@@ -32,7 +40,7 @@ Page({
           },
           {
             name: '图片裁剪',
-            url: '/pages/imgcove/index'
+            url: '/pages/canvas/cutimage/index'
           }
         ]
       }
