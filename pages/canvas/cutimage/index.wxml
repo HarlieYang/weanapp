@@ -4,12 +4,16 @@
          <button size="default" type="default" class="select-image"  bindtap="getImage">选择图片</button>
          <canvas canvas-id="new-canvas"  class="new-canvas"></canvas>
     </view>
-    <view class="cut-container" wx:else >
+    <view class="cut-container" wx:else bindtouchstart="onTouchstart" bindtouchmove="onTouchmove" bindtouchend="onTouchend">
         <canvas
             canvas-id="canvas"
             class="canvas"
-            style="width:{{canvasWidth}}px;height:{{canvasHeight}}px"
+            style="width:{{canvasWidth}}px;height:{{canvasHeight}}px;left:{{img_left}}px;top:{{img_top}}px"
         ></canvas>
+        <cover-view class="bg-top" style="height:{{mask_top_height}}px"></cover-view>
+        <cover-view class="bg-bottom" style="height:{{mask_bottom_height}}px"></cover-view>
+        <cover-view class="bg-left"></cover-view>
+        <cover-view class="bg-right"></cover-view>
         <cover-view  class="line">
         </cover-view>
         <cover-view class="set">
