@@ -2,6 +2,7 @@
 <view class="section">
     <view wx:if="{{!cutView}}" class="section-main">
          <button size="default" type="default" class="select-image"  bindtap="getImage">选择图片</button>
+         <button type="default" class="select-image" bindtap="saveImage">图片保存</button>
          <canvas canvas-id="new-canvas"  class="new-canvas"></canvas>
     </view>
     <view class="cut-container" wx:else bindtouchstart="onTouchstart" bindtouchmove="onTouchmove" bindtouchend="onTouchend">

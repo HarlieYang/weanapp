@@ -164,7 +164,8 @@ Page({
             // 获取图片正常铺开
             wx.hideLoading()
             this.setData({
-              cutView: false
+              cutView: false,
+              imgUrl: res.path
             },()=>{
               const ctx = wx.createCanvasContext("new-canvas");
               ctx.drawImage( res.path, 0, 0, res.width, res.height);
@@ -172,6 +173,33 @@ Page({
             })
           }
         });
+      }
+    })
+  },
+  // 图片保存
+  saveImage(){
+    if(this.data.imgUrl == ""){
+      wx.showToast({
+        title: '请先选择图片',
+        duration: 2000,
+        icon: 'none'
+      });
+      return
+    }
+    wx.showLoading({
+      title: '正在保存'
+    })
+    wx.saveImageToPhotosAlbum({
+      filePath: this.data.imgUrl,
+      success(res) { 
+        wx.showToast({
+          title: '保存成功',
+          duration: 2000,
+          icon: 'none'
+        });
+      },
+      complete(){
+        wx.hideLoading()
       }
     })
   },

@@ -45,11 +45,11 @@
     height: 400rpx;
     background: #cccccc;
     margin: 0 auto;
-    margin-top: 20rpx;
 }
 .select-image{
     width: 600rpx;
     margin: 0 auto;
+    margin-bottom: 20rpx;
 }
 .cut-container{
     position: fixed;
