@@ -1,129 +1,57 @@
-/* pages/date/index.wxss */
-.section-main{
+.section{
     width: 100%;
     height: 100vh;
-    padding: 300rpx 0;
-    box-sizing: border-box;
 }
-.canvas{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-.bg-top,.bg-bottom{
-    width: calc(100% - 150rpx);
-    background: rgba(0,0,0,0.5);
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-.bg-left,.bg-right{
-    width: 75rpx;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-    position: absolute;
-    top: 0;
-}
-.bg-left{
-    left: 0;
-}
-.bg-right{
-    right: 0;
-}
-.bg-top{
-    top: 0;
-}
-.bg-bottom{
-    bottom: 0;
-}
-.new-canvas{
+.movable-area,.clip-box {
     width: 600rpx;
-    height: 400rpx;
-    background: #cccccc;
-    margin: 0 auto;
+    height: 350rpx;
 }
-.select-image{
+.movable-area.active, .clip-box.active {
     width: 600rpx;
-    margin: 0 auto;
-    margin-bottom: 20rpx;
+    height: 600rpx;
 }
-.cut-container{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0,0.7);
+.image {
+  width: 400%;
+  height: 400%;
+  transform: translate3d(0, 0, 0) scale(0.25, 0.25);
+  transform-origin: left top;
 }
-.cut-container .line{
-    width: 600rpx;
-    height: 400rpx;
-    border: 1px solid #ffffff;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    box-sizing: border-box;
-    z-index: 999;
+
+.bottom-btns {
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+  display: flex;
+  justify-content: space-between;
+  background: #202020;
+  color: #ffffff;
+  height: 60px;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
-.cut-container .line .tl{
-    position: absolute;
-    left: -1px;
-    top: -1px;
-    width: 15px;
-    height: 15px;
-    border-top: 2px solid #ffffff;
-    border-left: 2px solid #ffffff;
-}
-.cut-container .line .tr{
-    position: absolute;
-    right: -1px;
-    top: -1px;
-    width: 15px;
-    height: 15px;
-    border-top: 2px solid #ffffff;
-    border-right: 2px solid #ffffff;
-}
-.cut-container .line .bl{
-    position: absolute;
-    left: -1px;
-    bottom: -1px;
-    width: 15px;
-    height: 15px;
-    border-bottom: 2px solid #ffffff;
-    border-left: 2px solid #ffffff;
-}
-.cut-container .line .br{
-    position: absolute;
-    right: -1px;
-    bottom: -1px;
-    width: 15px;
-    height: 15px;
-    border-bottom: 2px solid #ffffff;
-    border-right: 2px solid #ffffff;
-}
-.set{
-    width: 600rpx;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    bottom: 60rpx;
-    left: 0;
-    right: 0;
-    margin: auto;
-    z-index: 10;
-}
-.set-item{
-    color:#ffffff;
-}
-.set-item>image{
-    width: 30px;
+
+.bottom-btns .complete{
+    width: 80px;
     height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+    background: #f86767;
+}
+/* 把 canvas 定位到屏幕之外 */
+.canvas {
+  position: fixed;
+  left: 100%;
+  top: 100%;
+}
+.clip-box .item{
+    position: fixed;
+    background: rgba(0,0,0,0.85);
+}
+.clip-box{
+    box-sizing: border-box;
+    position: absolute;
+    border: 2px solid #f86767;
+    pointer-events: none;
 }

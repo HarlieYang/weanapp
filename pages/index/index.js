@@ -15,10 +15,10 @@ Page({
   data: {
     weanText: [
       {
-        name: '业务组件',
+        name: '视图组件',
         textData:[
           {
-            name: '底部导航栏',
+            name: '滑动导航栏',
             url: '/pages/tabbar/index'
           },
           {
@@ -32,7 +32,7 @@ Page({
         ]
       },
       {
-        name: '营销组件',
+        name: '功能组件',
         textData:[
           {
             name: '时间日期选择器',
@@ -40,7 +40,7 @@ Page({
           },
           {
             name: '图片裁剪',
-            url: '/pages/canvas/cutimage/index'
+            url: '/pages/canvas/index'
           }
         ]
       }

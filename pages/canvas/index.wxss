@@ -1,0 +1,30 @@
+/* pages/canvas/index.wxss */
+.section-main{
+    width: 100%;
+    height: 100vh;
+    padding: 100rpx 20rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.section-main .image{
+    width: 600rpx;
+    height: 350rpx;
+    margin-bottom: 20rpx;
+}
+.section-main .image.active{
+    width: 600rpx;
+    height: 600rpx;
+}
+.btn-select{
+    width: 600rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    border-radius: 10rpx;
+    text-align: center;
+    color: #ffffff;
+    background: #f86767;
+    margin-bottom: 20rpx;
+}

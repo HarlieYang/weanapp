@@ -3,6 +3,7 @@
     <view class="section__title">日期选择器</view>
     <view class="con">
         <picker mode="multiSelector" 
+            indicator-class="indicator-class"
             value="{{startTime.dateTime}}" 
             bindchange="changeDateTime" 
             bindcolumnchange="changeDateTimeColumn" 
@@ -13,6 +14,7 @@
         </picker>
         <span>至</span>
         <picker mode="multiSelector" 
+            indicator-class="indicator-class"
             value="{{endTime.dateTime}}" 
             bindchange="changeDateTime" 
             bindcolumnchange="changeDateTimeColumn" 

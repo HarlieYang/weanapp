@@ -6,13 +6,14 @@
     "pages/drawer/index",
     "pages/date/index",
     "pages/imgcove/index",
+    "pages/canvas/index",
     "pages/canvas/cutimage/index"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weanapp",
-    "navigationBarTextStyle":"black"
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "微信常用功能",
+    "navigationBarTextStyle":"white"
   },
   "sitemapLocation": "sitemap.json"
 }

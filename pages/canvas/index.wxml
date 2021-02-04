@@ -1,0 +1,7 @@
+ <view class="section-main">
+    <image src="{{imageSrc}}" class="{{type === 1 ? 'image active': 'image'}}"/>
+    <view>
+        <view size="default" type="default" class="select-image"  bindtap="getImage" class="btn-select">选择图片</view>
+        <view type="default" class="select-image" bindtap="saveImage" class="btn-select">图片保存</view>
+    </view>
+</view>

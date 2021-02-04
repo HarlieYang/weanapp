@@ -12,3 +12,7 @@
     display: flex;
     justify-content: space-between;
 }
+.indicator-class{
+    line-height: 60rpx;
+    font-size: 32rpx;
+}
